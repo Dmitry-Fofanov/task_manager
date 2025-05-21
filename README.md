@@ -9,7 +9,6 @@ cd task_manager
 ```
 
 ### 2. Настройка окружения
-
 Создать файл `.env`. Можно использовать пример из `.env.example`:
 
 ```bash
@@ -17,7 +16,6 @@ cp .env.example .env
 ```
 
 ### 3. Запуск контейнеров
-
 ```bash
 docker compose up
 ```
@@ -26,7 +24,6 @@ docker compose up
 ## Проверка работы API
 
 ### Создание задачи
-
 ```bash
 curl --request POST \
      --url 'http://localhost/tasks/' \
@@ -47,7 +44,6 @@ curl --request POST \
 
 
 ### Получение списка задач
-
 ```bash
 curl 'http://localhost/tasks/'
 ```
@@ -68,7 +64,6 @@ curl 'http://localhost/tasks/'
 ```
 
 ### Обновление данных задачи
-
 ```bash
 curl --request PUT \
      --url 'http://localhost/tasks/1/' \
@@ -93,7 +88,6 @@ curl --request PUT \
 ```
 
 ### Удаление задачи
-
 ```bash
 curl --request DELETE -i \
      --url 'http://localhost/tasks/1/'
